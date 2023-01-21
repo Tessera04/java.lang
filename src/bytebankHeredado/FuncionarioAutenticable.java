@@ -1,6 +1,6 @@
 package bytebankHeredado;
 
-public class Gerente extends FuncionarioAutenticable{
+public class FuncionarioAutenticable extends Funcionario {
 	
 	private String clave;
 	
@@ -11,9 +11,11 @@ public class Gerente extends FuncionarioAutenticable{
 	public boolean iniciarSesion(String clave) {
 		return clave == "12345";
 	}
-	//SOBREESCRITURA DE METODO
+
 	@Override
 	public double getBonificacion() {
-		return super.getSalario() + this.getSalario() * 0.05;
+		// TODO Auto-generated method stub
+		return 0;
 	}
+	
 }
