@@ -1,18 +1,20 @@
 package com.bytebank.test;
 
+import com.bytebank.modelo.*;
+
 public class testControlBonificacion {
 	
 	public static void main(String[] args) {
-		com.bytebank.modelo.Funcionario elu = new com.bytebank.modelo.Contador();
+		Funcionario elu = new Contador();
 		elu.setSalario(2000);
 		
-		com.bytebank.modelo.Gerente matias = new com.bytebank.modelo.Gerente();
+		Gerente matias = new Gerente();
 		matias.setSalario(5000);
 		
-		com.bytebank.modelo.Contador franco = new com.bytebank.modelo.Contador();
+		Contador franco = new Contador();
 		franco.setSalario(4000);
 		
-		com.bytebank.modelo.controlBonificaciones controlBonificacion = new com.bytebank.modelo.controlBonificaciones();
+		controlBonificaciones controlBonificacion = new controlBonificaciones();
 		
 		controlBonificacion.registrarSalario(elu);
 		controlBonificacion.registrarSalario(matias);

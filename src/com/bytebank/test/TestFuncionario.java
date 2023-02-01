@@ -1,8 +1,10 @@
 package com.bytebank.test;
 
+import com.bytebank.modelo.*;
+
 public class TestFuncionario {
 	public static void main(String[] args) {
-		com.bytebank.modelo.Funcionario Matias = new com.bytebank.modelo.Gerente();
+		Funcionario Matias = new Gerente();
 		Matias.setDocumento("42129182");
 		Matias.setNombre("Matias");
 		Matias.setSalario(2000);

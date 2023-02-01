@@ -1,9 +1,11 @@
 package com.bytebank.test;
 
+import com.bytebank.modelo.*;
+
 public class TestGerente {
 	public static void main(String[] args) {
 		//Funcionario gerente = new Funcionario();
-		com.bytebank.modelo.Gerente gerente = new com.bytebank.modelo.Gerente();
+		Gerente gerente = new Gerente();
 		gerente.setSalario(3000);
 		gerente.setClave("12345");
 		gerente.setTipo(1);

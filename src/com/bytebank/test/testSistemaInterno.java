@@ -1,10 +1,12 @@
 package com.bytebank.test;
 
+import com.bytebank.modelo.*;
+
 public class testSistemaInterno {
 	public static void main(String[] args) {
-		com.bytebank.modelo.SistemaInterno sistema = new com.bytebank.modelo.SistemaInterno();
-		com.bytebank.modelo.Gerente gerente1 = new com.bytebank.modelo.Gerente();
-		com.bytebank.modelo.Administrador admin = new com.bytebank.modelo.Administrador();
+		SistemaInterno sistema = new SistemaInterno();
+		Gerente gerente1 = new Gerente();
+		Administrador admin = new Administrador();
 		
 		sistema.autentica(gerente1);
 		sistema.autentica(admin);
