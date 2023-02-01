@@ -8,7 +8,24 @@ public abstract  class Cuenta {
 	
 	private static int total = 0;
 	
-	
+	/**
+	 * Esto es la documentacion del proyecto
+	 * aca se ponen las explicaciones del mismo
+	 * es con una barrita y 2 asteriscos y das enter
+	 * ahi se genera esta wea
+	 * ESTO NO SON COMENTARIOS, ES DOCUMENTACION
+	 * 
+	 * @version 1.0
+	 * @author Tessera04
+	 * 
+	 * Puede llamar a clases con param de parametro
+	 * @param agencia
+	 * @param numero
+	 * 
+	 * @throws algun error
+	 * 
+	 * etc etc.
+	 */
 	
 	public Cuenta(int agencia, int numero) {
 		
