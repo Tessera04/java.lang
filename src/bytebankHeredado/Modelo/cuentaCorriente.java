@@ -1,4 +1,4 @@
-package bytebankHeredado;
+package bytebankHeredado.Modelo;
 
 public class cuentaCorriente extends Cuenta {
 	
@@ -8,9 +8,9 @@ public class cuentaCorriente extends Cuenta {
 	
 	//SOBREESCRITURA DE METTODO, NO BORRAR EL OVERRIDE.
 	@Override
-	public boolean saca(double valor) {
+	public void saca(double valor) {
 		double comision = 0.2;
-		return super.saca(valor + comision);
+		super.saca(valor + comision);
 	}
 
 	@Override

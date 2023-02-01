@@ -1,4 +1,4 @@
-package bytebankHeredado;
+package bytebankHeredado.Modelo;
 
 public class cuentaAhorro extends Cuenta {
 

@@ -1,8 +1,8 @@
-package bytebankHeredado;
+package bytebankHeredado.test;
 
 public class TestFuncionario {
 	public static void main(String[] args) {
-		Funcionario Matias = new Gerente();
+		bytebankHeredado.Modelo.Funcionario Matias = new bytebankHeredado.Modelo.Gerente();
 		Matias.setDocumento("42129182");
 		Matias.setNombre("Matias");
 		Matias.setSalario(2000);

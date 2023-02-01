@@ -1,4 +1,4 @@
-package bytebankHeredado;
+package bytebankHeredado.Modelo;
 // entidad Cuenta
 public abstract  class Cuenta {
 	protected double saldo;
@@ -43,13 +43,11 @@ public abstract  class Cuenta {
 		}
 	}
 	
-	public boolean saca(double valor){
-		if (this.saldo >= valor) {
-			this.saldo -= valor;
-			return true;
-		} else {
-			return false;
+	public void saca(double valor){
+		if(this.saldo < valor) {
+			throw new SaldoInsuficienteException("Saldo insuficiente");
 		}
+		this.saldo -= valor;	
 	}
 	
 	public boolean transferir(double valor, Cuenta cuenta){

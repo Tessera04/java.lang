@@ -1,4 +1,4 @@
-package bytebankHeredado;
+package bytebankHeredado.Modelo;
 
 public class Administrador extends Funcionario implements Autenticable{
 	
