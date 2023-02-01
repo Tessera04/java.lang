@@ -1,4 +1,4 @@
-package bytebankHeredado.test;
+package com.bytebank.test;
 
 public class TestReferencias {
 	
@@ -6,10 +6,10 @@ public class TestReferencias {
 		
 	//EL ELEMENTO MAS GENERAL PUEDE SER ADAPTADO AL MAS ESPECIFICO,
 	//PERO NO AL REVES.
-		bytebankHeredado.Modelo.Funcionario funcionario = new bytebankHeredado.Modelo.Gerente();
+		com.bytebank.modelo.Funcionario funcionario = new com.bytebank.modelo.Gerente();
 		funcionario.setNombre("Elu");
 		
-		bytebankHeredado.Modelo.Gerente gerente = new bytebankHeredado.Modelo.Gerente();
+		com.bytebank.modelo.Gerente gerente = new com.bytebank.modelo.Gerente();
 		gerente.setNombre("Matias");
 		
 		funcionario.setSalario(2000);

@@ -1,4 +1,4 @@
-package bytebankHeredado.Modelo;
+package com.bytebank.modelo;
 
 public class cuentaCorriente extends Cuenta {
 	
