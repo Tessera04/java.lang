@@ -11,6 +11,7 @@ public class TestArrayList {
 		ArrayList<Cuenta> lista = new ArrayList<>();
 		Cuenta cc = new cuentaCorriente(12, 34);
 		Cuenta cc2 = new cuentaCorriente(56, 78);
+		Cuenta cc3 = new cuentaCorriente(12, 34);
 		
 		lista.add(cc);
 		lista.add(cc2);
@@ -30,6 +31,17 @@ public class TestArrayList {
 		
 		for (Cuenta cuenta : lista) {
 			System.out.println(cuenta);
+		}
+		
+		boolean contiene = lista.contains(cc3);
+		//COMPARA POR REFERENCIA
+		if (contiene) {
+			System.out.println("Si, es igual (equals)");
+		}
+		
+		//COMPARA POR VALORES
+		if (cc.esIgual(cc3)) {
+			System.out.println("Si son iguales");
 		}
 		
 	}
