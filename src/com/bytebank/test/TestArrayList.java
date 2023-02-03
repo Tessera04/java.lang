@@ -1,14 +1,18 @@
 package com.bytebank.test;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Vector;
 
 import com.bytebank.modelo.*;
 
 public class TestArrayList {
 
 	public static void main(String[] args) {
+		//List<Cliente> listaClientes = new LinkedList<>();
 		
-		ArrayList<Cuenta> lista = new ArrayList<>();
+		List<Cuenta> lista = new ArrayList<Cuenta>();
 		Cuenta cc = new cuentaCorriente(12, 34);
 		Cuenta cc2 = new cuentaCorriente(56, 78);
 		Cuenta cc3 = new cuentaCorriente(12, 34);
@@ -40,9 +44,9 @@ public class TestArrayList {
 		}
 		
 		//COMPARA POR VALORES
-		if (cc.esIgual(cc3)) {
-			System.out.println("Si son iguales");
-		}
+		//if (cc.esIgual(cc3)) {
+		//	System.out.println("Si son iguales");
+		//}
 		
 	}
 	
